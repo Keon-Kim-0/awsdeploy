@@ -1,5 +1,21 @@
 branch-defaults:
   default:
     environment: Reactyloops-env
+  master:
+    environment: Reactyloops-env
+environment-defaults:
+  Reactyloops-env:
+    branch: master
+    repository: origin
 global:
+  application_name: reactyloops
+  default_ec2_keyname: null
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
   profile: null
+  sc: git
+  workspace_type: Application

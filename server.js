@@ -1,8 +1,10 @@
 // server.js
 //
+import path from 'path';
 import express from 'express';
 const PORT = process.env.HTTP_PORT || 8080;
 const app = express();
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 app.get('/', (req, res) => {
   res.send('just gonna send it');
 });
