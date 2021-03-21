@@ -5,8 +5,8 @@ branch-defaults:
     environment: Reactyloops-env
 environment-defaults:
   Reactyloops-env:
-    branch: master
-    repository: origin
+    branch: null
+    repository: null
 global:
   application_name: reactyloops
   default_ec2_keyname: null
